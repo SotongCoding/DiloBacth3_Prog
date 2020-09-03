@@ -19,7 +19,6 @@ public class Bird : MonoBehaviour {
     [Header ("Peluru")]
     public GameObject bullet;
 
-
     //init variable
     void Start () {
         //Mendapatkan komponent ketika game baru berjalan
@@ -29,6 +28,7 @@ public class Bird : MonoBehaviour {
     }
     private void OnCollisionEnter2D (Collision2D collision) {
         //menghentikan Animasi Burung ketika bersentukan dengan object lain
+        if (collision.gameObject.tag != "bullet");
         animator.enabled = false;
     }
     //Update setiap frame  
@@ -88,7 +88,7 @@ public class Bird : MonoBehaviour {
     }
 
     public void DoShoot () {
-          InvokeRepeating("Shoot",7,2);
+        InvokeRepeating ("Shoot", 7, 2);
     }
     void Shoot () {
         GameObject bullet = Instantiate (this.bullet, transform.position, Quaternion.identity);
