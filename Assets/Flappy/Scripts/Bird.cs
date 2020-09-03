@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Bird : MonoBehaviour {
     // Global Variables
-
+    //Change Some
     [SerializeField] private int score;
     [SerializeField] private Text scoreText;
     [SerializeField] private UnityEvent OnAddPoint;
