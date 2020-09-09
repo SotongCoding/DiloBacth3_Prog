@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Flapy.unity
-    guid: b84fd3d1de44f274b86b70fa9d86d7ec
+    path: Assets/Magnetize/Magnetize.unity
+    guid: a968836689a244944bd78bcab0dbb621
   m_configObjects: {}
